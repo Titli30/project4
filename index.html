@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Resume Builder</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Create Your Professional Resume</h1>
+      <p>Build a job-winning resume in minutes with live preview and customizable templates.</p>
+      <button onclick="startBuilding()">Start Building</button>
+      <div class="switchers">
+        <a href="#" onclick="switchTemplate()">Template Switcher</a> |
+        <a href="#" onclick="switchTheme()">Theme Switcher</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="form-section" style="display:none;">
+    <form id="resumeForm">
+      <input type="file" id="profileImage" accept="image/*" />
+      <input type="text" id="guardian" placeholder="Guardian Name" />
+      <input type="text" id="fullName" placeholder="Your Name" required />
+      <input type="text" id="title" placeholder="Job Title" required />
+      <textarea id="profile" placeholder="Short Profile Summary" rows="4" required></textarea>
+      <input type="text" id="email" placeholder="Email" required />
+      <input type="text" id="phone" placeholder="Phone" required />
+      <input type="text" id="address" placeholder="Address" required />
+
+      <h4>Work Experience</h4>
+      <div id="experienceSection"></div>
+      <button type="button" onclick="addExperience()">Add Experience</button>
+
+      <h4>Education</h4>
+      <div id="educationSection"></div>
+      <button type="button" onclick="addEducation()">Add Education</button>
+
+      <h4>Projects</h4>
+      <div id="projectSection"></div>
+      <button type="button" onclick="addProject()">Add Project</button>
+
+      <h4>Skills</h4>
+      <textarea id="skills" placeholder="E.g. SQL, Python, C++, Java" rows="2" required></textarea>
+
+      <h4>Languages</h4>
+      <textarea id="languages" placeholder="E.g. English: Proficient, French: Intermediate" rows="2" required></textarea>
+
+      <h4>Hobbies</h4>
+      <textarea id="hobbies" placeholder="E.g. Music, Reading, Drawing" rows="2"></textarea>
+
+      <button type="submit">Generate Resume</button>
+      <button type="button" id="downloadBtn">Download PDF</button>
+    </form>
+
+    <div class="resume-output" id="resumeOutput"></div>
+  </section>
+
+  <footer>
+    © 2025 Your Name | Built with 💻 HTML, CSS & JS |
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
