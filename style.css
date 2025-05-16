@@ -1,0 +1,80 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.hero {
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-text h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 1.2em;
+}
+
+.hero button {
+  padding: 10px 25px;
+  margin: 20px 10px;
+  background-color: white;
+  color: #2193b0;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.switchers a {
+  color: white;
+  text-decoration: underline;
+  font-size: 0.9em;
+}
+
+form {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  margin: 10px 5px;
+  padding: 10px 20px;
+  border: none;
+  background: #2193b0;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resume-output {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8em;
+  background: #222;
+  color: white;
+}
